@@ -11,6 +11,7 @@ $lightGreen: #28a556;
 $headerHeight: 70px;
 $sectionPadding: 7vh;
 $sectionNameSize: 30px;
+$maxSectionInnerWidth: 1200px;
 
 input, textarea {
   border: 0px;
@@ -125,8 +126,6 @@ input, textarea {
 }
 
 .main-section {
-  $maxInnerWidth: 1200px;
-
   width: 100%;
   padding-top: $sectionPadding;
   .section-name {
@@ -151,7 +150,7 @@ input, textarea {
     column-gap: 15px;
     row-gap: 15px;
 
-    max-width: $maxInnerWidth;
+    max-width: $maxSectionInnerWidth;
     width: 100%;
     margin: 30px auto 0px auto;
 
@@ -176,7 +175,7 @@ input, textarea {
     column-gap: 10px;
     row-gap: 10px;
 
-    max-width: $maxInnerWidth;
+    max-width: $maxSectionInnerWidth;
     width: 100%;
     margin: 30px auto 0px auto;
 
@@ -196,6 +195,14 @@ input, textarea {
         font-family: brandon-grotesque;
         color: black;
       }
+    }
+  }
+}
+
+@media (max-width: #{$maxSectionInnerWidth}) {
+  .main-section {
+    .items-wrapper, .items-wrapper-inline {
+      padding: 0px 20px;
     }
   }
 }
