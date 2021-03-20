@@ -32,7 +32,6 @@ input, textarea {
   }
   .nav-wrap {
     display: flex;
-    gap: 20px;
     .item {
       height: 100%;
       display: flex;
@@ -40,6 +39,9 @@ input, textarea {
       color: $mainGreen;
       font-family: brandon-grotesque;
       font-size: 20px;
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
     }
   }
   .logo-wrap, .contact-wrap {
@@ -52,9 +54,11 @@ input, textarea {
     align-items: center;
     font-family: brandon-grotesque;
     justify-content: flex-end;
+    .address-item {
+      margin-right: 40px;
+    }
     .address-item, .contact-item {
       display: flex;
-      gap: 40px;
       .icon-wrap {
 
       }

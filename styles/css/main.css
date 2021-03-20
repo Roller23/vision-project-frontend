@@ -29,7 +29,6 @@ input, textarea {
 }
 .main-header .nav-wrap {
   display: flex;
-  gap: 20px;
 }
 .main-header .nav-wrap .item {
   height: 100%;
@@ -38,6 +37,9 @@ input, textarea {
   color: #00911A;
   font-family: brandon-grotesque;
   font-size: 20px;
+}
+.main-header .nav-wrap .item:not(:last-child) {
+  margin-right: 20px;
 }
 .main-header .logo-wrap, .main-header .contact-wrap {
   flex-grow: 1;
@@ -50,9 +52,11 @@ input, textarea {
   font-family: brandon-grotesque;
   justify-content: flex-end;
 }
+.main-header .contact-wrap .address-item {
+  margin-right: 40px;
+}
 .main-header .contact-wrap .address-item, .main-header .contact-wrap .contact-item {
   display: flex;
-  gap: 40px;
 }
 .main-header .contact-wrap .address-item .content, .main-header .contact-wrap .contact-item .content {
   line-height: 18px;
