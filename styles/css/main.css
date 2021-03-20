@@ -47,7 +47,7 @@ input, textarea {
 }
 .main-header .contact-wrap {
   display: flex;
-  padding-right: 30px;
+  padding-right: 50px;
   align-items: center;
   font-family: brandon-grotesque;
   justify-content: flex-end;
@@ -62,18 +62,18 @@ input, textarea {
   line-height: 18px;
 }
 .main-header .contact-wrap .address-item .content .one, .main-header .contact-wrap .contact-item .content .one {
-  font-size: 14px;
+  font-size: 12px;
   color: #00911A;
 }
 .main-header .contact-wrap .address-item .content .two, .main-header .contact-wrap .address-item .content .three, .main-header .contact-wrap .contact-item .content .two, .main-header .contact-wrap .contact-item .content .three {
-  font-size: 15px;
+  font-size: 13px;
 }
 
 .main-screen {
   position: relative;
   z-index: 1;
   width: 100%;
-  height: calc(100vh - 70px);
+  height: calc(100vh - 70px - 7vh - 30px - 10px);
   background: #020024;
   background: linear-gradient(90deg, #020024 0%, #00911a 0%, rgba(0, 145, 26, 0) 100%);
 }
@@ -117,7 +117,7 @@ input, textarea {
 
 .main-section {
   width: 100%;
-  padding-top: 10vh;
+  padding-top: 7vh;
 }
 .main-section .section-name {
   font-family: vox;
@@ -154,6 +154,34 @@ input, textarea {
   font-size: 18px;
   text-align: center;
   font-weight: bold;
+}
+
+@media (max-width: 1000px) {
+  .main-header {
+    height: calc(70px * 0.7);
+  }
+  .main-header .nav-wrap .item {
+    font-size: 15px;
+  }
+  .main-header .nav-wrap .item:not(:last-child) {
+    margin-right: 10px;
+  }
+  .main-header .contact-wrap {
+    padding-right: 20px;
+  }
+  .main-header .contact-wrap .address-item {
+    margin-right: 20px;
+  }
+  .main-header .contact-wrap .address-item .content, .main-header .contact-wrap .contact-item .content {
+    line-height: 15px;
+  }
+  .main-header .contact-wrap .address-item .content .one, .main-header .contact-wrap .contact-item .content .one {
+    font-size: 12px;
+    color: #00911A;
+  }
+  .main-header .contact-wrap .address-item .content .two, .main-header .contact-wrap .address-item .content .three, .main-header .contact-wrap .contact-item .content .two, .main-header .contact-wrap .contact-item .content .three {
+    font-size: 13px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

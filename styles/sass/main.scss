@@ -9,6 +9,8 @@ body {
 $mainGreen: #00911A;
 $lightGreen: #28a556;
 $headerHeight: 70px;
+$sectionPadding: 7vh;
+$sectionNameSize: 30px;
 
 input, textarea {
   border: 0px;
@@ -50,7 +52,7 @@ input, textarea {
   }
   .contact-wrap {
     display: flex;
-    padding-right: 30px;
+    padding-right: 50px;
     align-items: center;
     font-family: brandon-grotesque;
     justify-content: flex-end;
@@ -65,11 +67,11 @@ input, textarea {
       .content {
         line-height: 18px;
         .one {
-          font-size: 14px;
+          font-size: 12px;
           color: $mainGreen;
         }
         .two, .three {
-          font-size: 15px;
+          font-size: 13px;
         }
       }
     }
@@ -80,7 +82,7 @@ input, textarea {
   position: relative;
   z-index: 1;
   width: 100%;
-  height: calc(100vh - #{$headerHeight});
+  height: calc(100vh - #{$headerHeight} - #{$sectionPadding} - #{$sectionNameSize} - 10px);
   background: rgb(2,0,36);
   background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,145,26,1) 0%, rgba(0,145,26,0) 100%);
   .content-wrap {
@@ -124,11 +126,11 @@ input, textarea {
 
 .main-section {
   width: 100%;
-  padding-top: 10vh;
+  padding-top: $sectionPadding;
   .section-name {
     font-family: vox;
     color: $lightGreen;
-    font-size: 30px;
+    font-size: $sectionNameSize;
     font-weight: bold;
     &::before {
       content: '';
@@ -144,7 +146,6 @@ input, textarea {
   .items-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    // grid-template-rows: 100px 100px;
     column-gap: 15px;
     row-gap: 15px;
 
@@ -163,6 +164,39 @@ input, textarea {
         font-size: 18px;
         text-align: center;
         font-weight: bold;
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .main-header {
+    height: calc(#{$headerHeight} * 0.7);
+    .nav-wrap {
+      .item {
+        font-size: 15px;
+        &:not(:last-child) {
+          margin-right: 10px;
+        }
+      }
+    }
+    .contact-wrap {
+      // display: none;
+      padding-right: 20px;
+      .address-item {
+        margin-right: 20px;
+      }
+      .address-item, .contact-item {
+        .content {
+          line-height: 15px;
+          .one {
+            font-size: 12px;
+            color: $mainGreen;
+          }
+          .two, .three {
+            font-size: 13px;
+          }
+        }
       }
     }
   }
