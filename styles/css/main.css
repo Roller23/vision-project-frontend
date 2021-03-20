@@ -19,7 +19,7 @@ input, textarea {
   z-index: 2;
   width: 100%;
   height: 70px;
-  box-shadow: 0px 4px 8px 2px #5c5c5c;
+  box-shadow: 0px 4px 20px 2px #616161;
   background-color: white;
   display: flex;
   justify-content: space-between;
@@ -34,12 +34,15 @@ input, textarea {
   height: 100%;
   display: flex;
   align-items: center;
-  color: #00911A;
   font-family: brandon-grotesque;
   font-size: 20px;
 }
 .main-header .nav-wrap .item:not(:last-child) {
   margin-right: 20px;
+}
+.main-header .nav-wrap .item a {
+  color: #00911A;
+  text-decoration: none;
 }
 .main-header .logo-wrap, .main-header .contact-wrap {
   flex-grow: 1;
@@ -97,7 +100,7 @@ input, textarea {
   margin-bottom: 30px;
 }
 
-.white-btn {
+.white-btn, .green-btn {
   cursor: pointer;
   background-color: white;
   color: #00911A;
@@ -108,11 +111,20 @@ input, textarea {
   font-size: 20px;
   font-family: brandon-grotesque;
   padding: 15px 50px;
-  box-shadow: 0px 0px 8px 2px #5c5c5c;
+  box-shadow: 0px 0px 8px 2px #686868;
   transition: 0.3s;
 }
-.white-btn:hover {
-  box-shadow: 0px 0px 12px 4px #5c5c5c;
+.white-btn:hover, .green-btn:hover {
+  box-shadow: 0px 0px 12px 4px #686868;
+}
+
+.green-btn {
+  background-color: #28a556;
+  color: white;
+  box-shadow: 0px 0px 8px 2px #acacac;
+}
+.green-btn:hover {
+  box-shadow: 0px 0px 12px 4px #acacac;
 }
 
 .main-section {
@@ -179,6 +191,106 @@ input, textarea {
 .main-section .items-wrapper-inline .desc .content {
   font-family: brandon-grotesque;
   color: black;
+}
+
+.main-contact-wrap .outer-wrapper {
+  display: flex;
+  padding: 10% 0px 5% 5%;
+}
+.main-contact-wrap .map-wrapper {
+  margin-right: 40px;
+  width: 30vw;
+  border-radius: 30px;
+  overflow: hidden;
+}
+.main-contact-wrap .map-wrapper img {
+  width: 100%;
+}
+.main-contact-wrap .form-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.main-contact-wrap .form-wrapper .header {
+  font-size: 30px;
+  font-family: vox;
+  color: #28a556;
+}
+.main-contact-wrap .form-wrapper input, .main-contact-wrap .form-wrapper textarea, .main-contact-wrap .form-wrapper label {
+  display: block;
+}
+.main-contact-wrap .form-wrapper input, .main-contact-wrap .form-wrapper textarea {
+  border: 2px solid #28a556;
+  border-radius: 20px;
+  padding: 3px 15px;
+  width: 400px;
+  height: 40px;
+  font-size: 17px;
+  font-family: brandon-grotesque;
+  margin: 10px 0px 20px 0px;
+}
+.main-contact-wrap .form-wrapper input::placeholder, .main-contact-wrap .form-wrapper textarea::placeholder {
+  color: lightgrey;
+}
+.main-contact-wrap .form-wrapper textarea {
+  height: 100px;
+  padding: 5px 15px;
+}
+.main-contact-wrap .form-wrapper label {
+  font-family: brandon-grotesque;
+  font-size: 20px;
+  color: #28a556;
+}
+.main-contact-wrap .form-wrapper label.required::after {
+  content: " (wymagane)";
+  color: black;
+  font-size: 14px;
+}
+.main-contact-wrap .footer {
+  display: flex;
+  padding: 20px 50px;
+  padding-right: 250px;
+  background-color: #28a556;
+  border-radius: 0px 65px 0px 0px;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 70%;
+}
+.main-contact-wrap .footer .item {
+  font-family: brandon-grotesque;
+  color: white;
+  display: flex;
+}
+.main-contact-wrap .footer .item .left {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.about-wrapper .main-header {
+  box-shadow: 0px 4px 20px 2px #e2e2e2;
+}
+.about-wrapper .about-section {
+  padding: 40px 30px;
+}
+.about-wrapper .about-section:first-child {
+  padding-top: 100px;
+}
+.about-wrapper .about-section .section-name {
+  font-family: vox;
+  color: #28a556;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.about-wrapper .about-section .content {
+  font-family: brandon-grotesque;
+  color: black;
+  font-size: 20px;
+}
+.about-wrapper .image-wrapper {
+  height: 25vh;
+  width: 100%;
+  background-color: lightgray;
 }
 
 @media (max-width: 1200px) {
