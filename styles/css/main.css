@@ -119,12 +119,12 @@ input, textarea {
 }
 
 .green-btn {
-  background-color: #28a556;
+  background-color: #18e061;
   color: white;
-  box-shadow: 0px 0px 8px 2px #acacac;
+  box-shadow: 0px 0px 8px 2px #d6d6d6;
 }
 .green-btn:hover {
-  box-shadow: 0px 0px 12px 4px #acacac;
+  box-shadow: 0px 0px 12px 4px #d6d6d6;
 }
 
 .main-section {
@@ -200,6 +200,7 @@ input, textarea {
 .main-contact-wrap .map-wrapper {
   margin-right: 40px;
   width: 30vw;
+  height: 0%;
   border-radius: 30px;
   overflow: hidden;
 }
@@ -210,6 +211,9 @@ input, textarea {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+.main-contact-wrap .form-wrapper .green-btn {
+  align-self: flex-start;
 }
 .main-contact-wrap .form-wrapper .header {
   font-size: 30px;
@@ -348,7 +352,7 @@ input, textarea {
 .portfolio-wrapper .works-wrapper .work-wrap .right-wrap .link a {
   font-size: 14px;
   text-decoration: none;
-  color: #28a556;
+  color: #18e061;
   display: block;
   margin: 5px 0px 20px 0px;
 }
