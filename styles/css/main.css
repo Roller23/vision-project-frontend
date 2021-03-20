@@ -255,6 +255,14 @@ input, textarea {
   justify-content: space-between;
   align-items: center;
   max-width: 70%;
+  width: 100%;
+}
+@media (max-width: 1250px) {
+  .main-contact-wrap .footer {
+    max-width: 100%;
+    border-radius: 0px;
+    padding: 20px 40px;
+  }
 }
 .main-contact-wrap .footer .item {
   font-family: brandon-grotesque;
