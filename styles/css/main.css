@@ -131,5 +131,25 @@ input, textarea {
   margin-right: 15px;
   transform: translateY(-3px);
 }
+.main-section .items-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  column-gap: 15px;
+  row-gap: 15px;
+  max-width: 1000px;
+  width: 100%;
+  margin: 30px auto 0px auto;
+}
+.main-section .items-wrapper .item img {
+  max-width: 100%;
+  display: block;
+}
+.main-section .items-wrapper .item .caption {
+  font-family: vox;
+  color: black;
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+}
 
 /*# sourceMappingURL=main.css.map */
