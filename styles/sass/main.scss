@@ -8,6 +8,7 @@ body {
 
 $mainGreen: #00911A;
 $lightGreen: #28a556;
+$brightGreen: #28a556;
 $headerHeight: 70px;
 $sectionPadding: 7vh;
 $sectionNameSize: 30px;
@@ -65,9 +66,9 @@ input, textarea {
     }
     .address-item, .contact-item {
       display: flex;
-      .icon-wrap {
+      // .icon-wrap {
 
-      }
+      // }
       .content {
         line-height: 18px;
         .one {
@@ -328,6 +329,76 @@ input, textarea {
     height: 25vh;
     width: 100%;
     background-color: lightgray;
+  }
+}
+
+.portfolio-wrapper {
+  .main-header {
+    box-shadow: 0px 4px 20px 2px #e2e2e2;
+  }
+
+  .works-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    padding: 100px 0px 0px 60px;
+    
+    .work-wrap {
+      display: flex;
+      .thumbnail-wrap {
+        $thumbnailSize: 15vw;
+        position: relative;
+        padding-top: $thumbnailSize;
+        width: $thumbnailSize;
+        height: 0%;
+        background-color: lightgray;
+        border-radius: 40px;
+        margin-right: 40px;
+      }
+      &:not(:last-child) {
+        margin-bottom: 50px;
+      }
+      .right-wrap {
+        max-width: 400px;
+        width: 100%;
+        .title {
+          font-size: 25px;
+          font-family: vox;
+          color: $lightGreen;
+          font-weight: bold;
+        }
+        .desc {
+          font-family: brandon-grotesque;
+          font-size: 16px;
+          color: black;
+          margin: 20px 0px;
+        }
+        .link {
+          font-family: brandon-grotesque;
+          font-size: 16px;
+          color: black;
+          a {
+            font-size: 14px;
+            text-decoration: none;
+            color: $brightGreen;
+            display: block;
+            margin: 5px 0px 20px 0px;
+          }
+        }
+
+        .gallery-btn {
+          text-transform: uppercase;
+          border-radius: 20px;
+          border: 2px solid $lightGreen;
+          color: $lightGreen;
+          background-color: white;
+          padding: 5px 25px;
+          cursor: pointer;
+          outline: none;
+          font-size: 18px;
+        }
+      }
+    }
   }
 }
 
