@@ -6,9 +6,18 @@ body {
   box-sizing: border-box;
 }
 
-$mainGreen: #00911A;
-$lightGreen: #28a556;
-$brightGreen: #18e061;
+@import 'colors';
+@import 'font';
+
+$min_width: 320px;
+$max_width: 1200px;
+$min_font: 16px;
+$max_font: 24px;
+
+// html {
+//   @include fluid-type($min_width, $max_width, $min_font, $max_font);
+// }
+
 $headerHeight: 70px;
 $sectionPadding: 7vh;
 $sectionNameSize: 30px;
@@ -23,7 +32,8 @@ input, textarea {
 }
 
 .main-header {
-  position: relative;
+  position: sticky;
+  top: 0px;
   z-index: 2;
   width: 100%;
   height: #{$headerHeight};
@@ -34,6 +44,15 @@ input, textarea {
   > div {
     height: 100%;
   }
+
+  .logo-wrap {
+    padding: 15px 0px;
+    padding-left: 50px;
+    .logo {
+      height: 100%;
+    }
+  }
+
   .nav-wrap {
     display: flex;
     .item {
@@ -66,11 +85,17 @@ input, textarea {
     }
     .address-item, .contact-item {
       display: flex;
-      // .icon-wrap {
-
-      // }
+      .icon-wrap {
+        height: 20px;
+        padding-top: 4px;
+        padding-right: 10px;
+        .icon {
+          height: 100%;
+          vertical-align: bottom;
+        }
+      }
       .content {
-        line-height: 18px;
+        line-height: 15px;
         .one {
           font-size: 12px;
           color: $mainGreen;
@@ -88,8 +113,17 @@ input, textarea {
   z-index: 1;
   width: 100%;
   height: calc(100vh - #{$headerHeight} - #{$sectionPadding} - #{$sectionNameSize} - 10px);
-  background: rgb(2,0,36);
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,145,26,1) 0%, rgba(0,145,26,0) 100%);
+  background-image: url(/images/eng.jpg);
+  background-position: center center;
+  background-size: cover;
+  .gradient {
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,145,26,1) 0%, rgba(0,145,26,0) 100%);
+  }
   .content-wrap {
     color: white;
     position: absolute;
