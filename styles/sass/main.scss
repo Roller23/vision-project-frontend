@@ -599,4 +599,56 @@ input, textarea {
   .about-section {
     padding: 20px 25px !important;
   }
+
+  .main-contact-wrap {
+    .form-wrapper {
+      width: 100%;
+    }
+    .outer-wrapper {
+      padding: 10% 5% 5% 5%;
+    }
+    .header {
+      font-size: 24px !important;
+      margin-bottom: 30px;
+    }
+    label {
+      font-size: 16px !important;
+    }
+    .map-wrapper {
+      display: none;
+    }
+    input, textarea {
+      width: 100% !important;
+    }
+    .green-btn {
+      padding: 10px 30px;
+      width: 100%;
+    }
+    .footer {
+      padding: 15px;
+      flex-wrap: wrap;
+      .left {
+        width: 60px;
+      }
+      .item:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  .portfolio-wrapper {
+    .works-wrapper {
+      padding: 50px 20px 0px 20px;
+    }
+    .work-wrap {
+      flex-wrap: wrap;
+    }
+    .thumbnail-wrap {
+      padding-top: 100% !important;
+      width: 100% !important;
+      margin-right: 0px !important;
+      border-radius: 20px !important;
+      margin-bottom: 20px;
+    }
+  }
 }

@@ -548,6 +548,54 @@ input, textarea {
   .about-section {
     padding: 20px 25px !important;
   }
+
+  .main-contact-wrap .form-wrapper {
+    width: 100%;
+  }
+  .main-contact-wrap .outer-wrapper {
+    padding: 10% 5% 5% 5%;
+  }
+  .main-contact-wrap .header {
+    font-size: 24px !important;
+    margin-bottom: 30px;
+  }
+  .main-contact-wrap label {
+    font-size: 16px !important;
+  }
+  .main-contact-wrap .map-wrapper {
+    display: none;
+  }
+  .main-contact-wrap input, .main-contact-wrap textarea {
+    width: 100% !important;
+  }
+  .main-contact-wrap .green-btn {
+    padding: 10px 30px;
+    width: 100%;
+  }
+  .main-contact-wrap .footer {
+    padding: 15px;
+    flex-wrap: wrap;
+  }
+  .main-contact-wrap .footer .left {
+    width: 60px;
+  }
+  .main-contact-wrap .footer .item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  .portfolio-wrapper .works-wrapper {
+    padding: 50px 20px 0px 20px;
+  }
+  .portfolio-wrapper .work-wrap {
+    flex-wrap: wrap;
+  }
+  .portfolio-wrapper .thumbnail-wrap {
+    padding-top: 100% !important;
+    width: 100% !important;
+    margin-right: 0px !important;
+    border-radius: 20px !important;
+    margin-bottom: 20px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
