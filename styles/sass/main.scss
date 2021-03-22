@@ -500,6 +500,13 @@ input, textarea {
   }
 }
 
+.simple-footer {
+  background-color: $lightGreen;
+  width: 100%;
+  margin-top: 10px;
+  height: 20px;
+}
+
 @media (max-width: #{$maxSectionInnerWidth}) {
   .main-section {
     .items-wrapper, .items-wrapper-inline {

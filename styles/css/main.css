@@ -455,6 +455,13 @@ input, textarea {
   align-self: flex-start;
 }
 
+.simple-footer {
+  background-color: #28a556;
+  width: 100%;
+  margin-top: 10px;
+  height: 20px;
+}
+
 @media (max-width: 1200px) {
   .main-section .items-wrapper, .main-section .items-wrapper-inline {
     padding: 0px 20px;
