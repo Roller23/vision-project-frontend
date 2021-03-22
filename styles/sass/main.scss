@@ -579,7 +579,7 @@ input, textarea {
       font-size: 14px !important;
     }
     .content-wrap {
-      padding-right: calc(2 * #{$mainContentLeft});
+      max-width: calc(100% - (2 * #{$mainContentLeft}));
     }
   }
   .main-section {

@@ -529,7 +529,7 @@ input, textarea {
     font-size: 14px !important;
   }
   .main-screen .content-wrap {
-    padding-right: calc(2 * 5%);
+    max-width: calc(100% - (2 * 5%));
   }
 
   .main-section .items-wrapper {
