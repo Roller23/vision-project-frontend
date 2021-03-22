@@ -22,6 +22,7 @@ $headerHeight: 70px;
 $sectionPadding: 7vh;
 $sectionNameSize: 30px;
 $maxSectionInnerWidth: 1200px;
+$mainContentLeft: 5%;
 
 input, textarea {
   border: 0px;
@@ -37,7 +38,7 @@ input, textarea {
   z-index: 2;
   width: 100%;
   height: #{$headerHeight};
-  box-shadow: 0px 4px 20px 2px #616161;
+  box-shadow: 0px 4px 20px 2px #e2e2e2;
   background-color: white;
   display: flex;
   justify-content: space-between;
@@ -131,7 +132,7 @@ input, textarea {
     transform: translateY(-50%);
     max-width: 600px;
     width: 100%;
-    left: 5%;
+    left: $mainContentLeft;
     .bigger {
       font-size: 60px;
       font-family: vox;
@@ -369,9 +370,6 @@ input, textarea {
 }
 
 .about-wrapper {
-  .main-header {
-    box-shadow: 0px 4px 20px 2px #e2e2e2;
-  }
   .about-section {
     padding: 40px 80px;
     &:first-child {
@@ -419,9 +417,6 @@ input, textarea {
 
 .portfolio-wrapper {
   margin-bottom: 50px;
-  .main-header {
-    box-shadow: 0px 4px 20px 2px #e2e2e2;
-  }
 
   .works-wrapper {
     display: flex;
@@ -537,8 +532,12 @@ input, textarea {
 
 @media (max-width: 1000px) {
   .main-header {
-    height: calc(#{$headerHeight} * 0.7);
+    height: calc(#{$headerHeight} * 0.8);
+    .logo-wrap {
+      display: none;
+    }
     .nav-wrap {
+      padding-left: 10px;
       .item {
         font-size: 15px;
         &:not(:last-child) {
@@ -547,12 +546,18 @@ input, textarea {
       }
     }
     .contact-wrap {
-      // display: none;
+      display: none;
       padding-right: 20px;
       .address-item {
         margin-right: 20px;
       }
+      .address-item {
+        display: none;
+      }
       .address-item, .contact-item {
+        .icon-wrap {
+          display: none;
+        }
         .content {
           line-height: 15px;
           .one {
@@ -565,5 +570,33 @@ input, textarea {
         }
       }
     }
+  }
+  .main-screen {
+    .bigger {
+      font-size: 30px !important;
+    }
+    .desc {
+      font-size: 14px !important;
+    }
+    .content-wrap {
+      padding-right: calc(2 * #{$mainContentLeft});
+    }
+  }
+  .main-section {
+    .items-wrapper {
+      grid-template-columns: 1fr 1fr;
+      .caption {
+        font-size: 16px !important;
+      }
+    }
+    .items-wrapper-inline {
+      grid-template-columns: 1fr;
+      .desc {
+        padding: 0px;
+      }
+    }
+  }
+  .about-section {
+    padding: 20px 25px !important;
   }
 }
