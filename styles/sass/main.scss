@@ -248,6 +248,7 @@ input, textarea {
 
 .main-contact-wrap {
   position: relative;
+  min-height: calc(100vh - #{$headerHeight});
   .background-wrapper {
     position: absolute;
     top: 0px;
@@ -276,7 +277,8 @@ input, textarea {
   }
   .outer-wrapper {
     display: flex;
-    padding: 10% 0px 5% 5%;
+    padding: 8% 0px 5% 5%;
+    padding-bottom: calc(2% + 100px);
   }
   
   .map-wrapper {
@@ -343,6 +345,9 @@ input, textarea {
   }
 
   .footer {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
     display: flex;
     padding: 20px 50px;
     padding-right: 250px;
@@ -531,6 +536,9 @@ input, textarea {
 }
 
 @media (max-width: 1000px) {
+  .main-contact-wrap {
+    min-height: calc(100vh - #{$headerHeight} * 0.8);
+  }
   .main-header {
     height: calc(#{$headerHeight} * 0.8);
     .logo-wrap {
@@ -605,7 +613,8 @@ input, textarea {
       width: 100%;
     }
     .outer-wrapper {
-      padding: 10% 5% 5% 5%;
+      padding: 8% 5% 5% 5%;
+      padding-bottom: calc(2% + 250px);
     }
     .header {
       font-size: 24px !important;
@@ -630,8 +639,11 @@ input, textarea {
       .left {
         width: 60px;
       }
-      .item:not(:last-child) {
-        margin-bottom: 30px;
+      .item {
+        width: 100%;
+        &:not(:last-child) {
+          margin-bottom: 30px;
+        }
       }
     }
   }

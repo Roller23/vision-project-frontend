@@ -221,6 +221,7 @@ input, textarea {
 
 .main-contact-wrap {
   position: relative;
+  min-height: calc(100vh - 70px);
 }
 .main-contact-wrap .background-wrapper {
   position: absolute;
@@ -250,7 +251,8 @@ input, textarea {
 }
 .main-contact-wrap .outer-wrapper {
   display: flex;
-  padding: 10% 0px 5% 5%;
+  padding: 8% 0px 5% 5%;
+  padding-bottom: calc(2% + 100px);
 }
 .main-contact-wrap .map-wrapper {
   margin-right: 40px;
@@ -306,6 +308,9 @@ input, textarea {
   font-size: 14px;
 }
 .main-contact-wrap .footer {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
   display: flex;
   padding: 20px 50px;
   padding-right: 250px;
@@ -483,6 +488,10 @@ input, textarea {
   }
 }
 @media (max-width: 1000px) {
+  .main-contact-wrap {
+    min-height: calc(100vh - 70px * 0.8);
+  }
+
   .main-header {
     height: calc(70px * 0.8);
   }
@@ -553,7 +562,8 @@ input, textarea {
     width: 100%;
   }
   .main-contact-wrap .outer-wrapper {
-    padding: 10% 5% 5% 5%;
+    padding: 8% 5% 5% 5%;
+    padding-bottom: calc(2% + 250px);
   }
   .main-contact-wrap .header {
     font-size: 24px !important;
@@ -578,6 +588,9 @@ input, textarea {
   }
   .main-contact-wrap .footer .left {
     width: 60px;
+  }
+  .main-contact-wrap .footer .item {
+    width: 100%;
   }
   .main-contact-wrap .footer .item:not(:last-child) {
     margin-bottom: 30px;
