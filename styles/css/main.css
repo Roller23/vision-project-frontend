@@ -213,11 +213,15 @@ input, textarea {
 .main-section .items-wrapper-inline .desc {
   padding: 30px 0px;
   font-weight: 500;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
 }
 .main-section .items-wrapper-inline .desc .first {
   color: #28a556;
   font-size: 23px;
   font-family: vox;
+  margin-bottom: 5px;
 }
 .main-section .items-wrapper-inline .desc .content {
   font-family: brandon-grotesque;
@@ -510,6 +514,11 @@ input, textarea {
     padding: 0px 20px;
   }
 }
+@media (max-width: 1100px) {
+  .main-header .contact-wrap .icon-wrap {
+    display: none !important;
+  }
+}
 @media (max-width: 1000px) {
   .main-contact-wrap {
     min-height: calc(100vh - 70px * 0.8);
@@ -575,6 +584,7 @@ input, textarea {
   }
   .main-section .items-wrapper-inline .desc {
     padding: 0px;
+    display: block;
   }
   .main-section .items-wrapper-logos {
     grid-template-columns: 1fr 1fr 1fr 1fr;
