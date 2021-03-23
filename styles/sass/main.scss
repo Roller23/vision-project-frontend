@@ -56,6 +56,7 @@ input, textarea {
 
   .nav-wrap {
     display: flex;
+    font-weight: bold;
     .item {
       height: 100%;
       display: flex;
@@ -80,6 +81,7 @@ input, textarea {
     padding-right: 50px;
     align-items: center;
     font-family: brandon-grotesque;
+    font-weight: 600;
     justify-content: flex-end;
     .address-item {
       margin-right: 40px;
@@ -140,7 +142,8 @@ input, textarea {
     }
     .desc {
       font-family: brandon-grotesque;
-      font-size: 16px;
+      font-size: 20px;
+      font-weight: 500;
       margin-bottom: 30px;
     }
   }
@@ -156,6 +159,7 @@ input, textarea {
   text-transform: uppercase;
   font-size: 20px;
   font-family: brandon-grotesque;
+  font-weight: bold;
   padding: 15px 50px;
   box-shadow: 0px 0px 8px 2px #686868;
   transition: 0.3s;
@@ -233,6 +237,7 @@ input, textarea {
 
     .desc {
       padding: 30px 0px;
+      font-weight: 500;
       .first {
         color: $lightGreen;
         font-size: 23px;
@@ -297,6 +302,7 @@ input, textarea {
     display: flex;
     padding: 8% 0px 5% 5%;
     padding-bottom: calc(2% + 100px);
+    font-weight: 500;
   }
   
   .map-wrapper {
@@ -322,9 +328,10 @@ input, textarea {
     }
 
     .header {
-      font-size: 30px;
+      font-size: 32px;
       font-family: vox;
       color: $lightGreen;
+      font-weight: 600;
     }
 
     input, textarea, label {
@@ -352,7 +359,7 @@ input, textarea {
 
     label {
       font-family: brandon-grotesque;
-      font-size: 20px;
+      font-size: 22px;
       color: $lightGreen;
       &.required::after {
         content: ' (wymagane)';
@@ -496,14 +503,15 @@ input, textarea {
         flex-flow: column;
         justify-content: space-between;
         .title {
-          font-size: 25px;
+          font-size: 28px;
           font-family: vox;
           color: $lightGreen;
-          font-weight: bold;
+          font-weight: 600;
         }
         .desc {
           font-family: brandon-grotesque;
           font-size: 16px;
+          font-weight: 500;
           color: black;
           margin: 20px 0px;
           height: 100%;
