@@ -488,7 +488,7 @@ input, textarea {
     .work-wrap {
       display: flex;
       .thumbnail-wrap {
-        $thumbnailSize: 15vw;
+        $thumbnailSize: 35vh;
         position: relative;
         padding-top: $thumbnailSize;
         width: $thumbnailSize;
@@ -507,29 +507,29 @@ input, textarea {
         flex-flow: column;
         justify-content: space-between;
         .title {
-          font-size: 28px;
+          font-size: 30px;
           font-family: vox;
           color: $lightGreen;
           font-weight: 600;
         }
         .desc {
           font-family: brandon-grotesque;
-          font-size: 16px;
-          font-weight: 500;
+          font-size: 20px;
+          font-weight: 400;
           color: black;
           margin: 20px 0px;
           height: 100%;
         }
         .link {
           font-family: brandon-grotesque;
-          font-size: 16px;
+          font-size: 18px;
           color: black;
           a {
-            font-size: 14px;
+            font-size: 17px;
             text-decoration: none;
             color: $brightGreen;
             display: block;
-            margin: 5px 0px 20px 0px;
+            margin: 3px 0px 20px 0px;
           }
         }
 

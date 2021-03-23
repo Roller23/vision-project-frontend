@@ -446,8 +446,8 @@ input, textarea {
 }
 .portfolio-wrapper .works-wrapper .work-wrap .thumbnail-wrap {
   position: relative;
-  padding-top: 15vw;
-  width: 15vw;
+  padding-top: 35vh;
+  width: 35vh;
   height: 0%;
   background-color: lightgray;
   border-radius: 40px;
@@ -464,30 +464,30 @@ input, textarea {
   justify-content: space-between;
 }
 .portfolio-wrapper .works-wrapper .work-wrap .right-wrap .title {
-  font-size: 28px;
+  font-size: 30px;
   font-family: vox;
   color: #28a556;
   font-weight: 600;
 }
 .portfolio-wrapper .works-wrapper .work-wrap .right-wrap .desc {
   font-family: brandon-grotesque;
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 20px;
+  font-weight: 400;
   color: black;
   margin: 20px 0px;
   height: 100%;
 }
 .portfolio-wrapper .works-wrapper .work-wrap .right-wrap .link {
   font-family: brandon-grotesque;
-  font-size: 16px;
+  font-size: 18px;
   color: black;
 }
 .portfolio-wrapper .works-wrapper .work-wrap .right-wrap .link a {
-  font-size: 14px;
+  font-size: 17px;
   text-decoration: none;
   color: #18e061;
   display: block;
-  margin: 5px 0px 20px 0px;
+  margin: 3px 0px 20px 0px;
 }
 .portfolio-wrapper .works-wrapper .work-wrap .right-wrap .gallery-btn {
   text-transform: uppercase;
