@@ -621,6 +621,9 @@ input, textarea {
         padding: 0px;
       }
     }
+    .items-wrapper-logos {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
   }
   .about-section {
     padding: 20px 25px !important;
