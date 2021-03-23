@@ -244,6 +244,24 @@ input, textarea {
       }
     }
   }
+  
+  .items-wrapper-logos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 30px;
+
+    max-width: $maxSectionInnerWidth;
+    width: 100%;
+    margin: 30px auto 50px auto;
+
+    img {
+      max-width: 100%;
+      max-height: 100px;
+      display: block;
+      margin: auto;
+    }
+  }
 }
 
 .main-contact-wrap {
@@ -529,7 +547,7 @@ input, textarea {
 
 @media (max-width: #{$maxSectionInnerWidth}) {
   .main-section {
-    .items-wrapper, .items-wrapper-inline {
+    .items-wrapper, .items-wrapper-inline, .items-wrapper-logos {
       padding: 0px 20px;
     }
   }
