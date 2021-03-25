@@ -434,7 +434,7 @@ input, textarea {
       background-image: url(/images/about1.jpg);
     }
     &.second {
-      background-image: url(/images/about2.jpg);
+      background-image: url(/images/wires.jpeg);
     }
 
     .green {
@@ -459,11 +459,11 @@ input, textarea {
     padding: 100px 0px 0px 60px;
 
     .background-wrap {
-      position: absolute;
+      position: fixed;
       left: 0px;
       top: 0px;
       width: 100%;
-      height: calc(100vh - #{$headerHeight});
+      height: 100%;
       z-index: -1;
       background-image: url(/images/works_bg.jpg);
       background-size: cover;
