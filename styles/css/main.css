@@ -285,12 +285,16 @@ input, textarea {
 .main-contact-wrap .map-wrapper {
   margin-right: 40px;
   width: 30vw;
-  height: 0%;
+  height: 30vw;
   border-radius: 30px;
   overflow: hidden;
 }
 .main-contact-wrap .map-wrapper img {
   width: 100%;
+}
+.main-contact-wrap .map-wrapper iframe {
+  width: 100%;
+  height: 100%;
 }
 .main-contact-wrap .form-wrapper {
   display: flex;
