@@ -35,6 +35,9 @@ input, textarea {
 .main-header .logo-wrap .logo {
   height: 100%;
 }
+.main-header .logo-wrap .logo:first-child {
+  margin-right: 10px;
+}
 .main-header .nav-wrap {
   display: flex;
   font-weight: bold;
